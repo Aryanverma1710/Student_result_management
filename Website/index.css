@@ -6,104 +6,144 @@ body {
 }
 
 .header {
-  padding: 14px;
+  padding: 8px;
   text-align: center;
   background: #d8dee9;
   color: rgb(16, 16, 16);
+  
 }
 
-.header h1{
-    
-    font-size: 3rem;
-    overflow: auto;
+.header p {
+  margin: 16px 0;
+  font-weight: 700;
+  font-size: 2rem;
+  overflow: auto;
+  
 }
 
 .container {
-  display: flex;
+  display: inline-flex;
+  height: 100vh;
+  width: 100%;
 }
 
 .side-nav {
   display: flex;
   flex-direction: column;
-  width: 16%;
-  height: 100vh;
+  width: 12%;
+  /* height: 100vh; */
   position: relative;
   padding: 30px;
-  border: 2px solid orange;
+  border-right-style: groove;
 }
 
 .data-area {
   width: 100%;
-  /* height: 100vh; */
-  border: 5px solid black;
-  padding: 20px;
-  overflow-x: hidden;
+  padding: 16px;
+  overflow: hidden;
 }
 
-.filter{
-    display: flex;
+.table-head {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  position: relative;
+  color: #FF0000;
+  text-align: center;
+  /* text-decoration: underline; */
+  margin-top: 0px;
 }
 
-.filter .table-info{
-    padding-right: 8px;
-    max-width: 50%;
-    flex: 0 0 50%;
+.filter {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.filter .table-info {
+  max-width: 50%;
+  flex: 0 0 50%;
 
 }
 
-.filter .search{
-    padding-left: 8px;
-    max-width: 50%;
-    flex: 0 0 50%;
-    text-align: right;
+.filter .table-info p{
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  position: relative;
+  margin: 0px;
 }
 
-.filter label{
-    font-size: 24px;
-    width: auto;
-    font-weight: 800;
+.filter .search {
+  max-width: 50%;
+  flex: 0 0 50%;
+  text-align: right;
+}
+
+.filter label {
+  width: auto;
+  font-weight: 800;
 }
 
 
-.filter input{
-    height: 24px;
-    display: inline-block;
-    position: relative;
-    margin-left: 10px;
-    right: 1rem;
-    border: 2px solid black;
-    border-radius: 5px;
+.filter input {
+  height: 24px;
+  display: inline-block;
+  margin-left: 10px;
+  right: 1rem;
+  border: 2px solid black;
+  border-radius: 5px;
 }
 
-.filter .table-info h1{
-    margin: 0px;
+.filter input:hover{
+  box-shadow: 5px 5px 10px #8a79ec;
+  transition: 400ms;
 }
 
-.table-area{
-    display: flex;
-    flex-direction: column;
-    height: 80%;
-    overflow:hidden;
-    border: 5px solid blueviolet;
+.filter .table-info h1 {
+  margin: 0px;
 }
+
+.table-area {
+  display: flex;
+  flex-direction: column;
+  height: 80%;
+  overflow: hidden;
+  border: 2px solid #d8dee9;
+}
+
+tbody{
+  background-color: #8a79ec;
+  white-space: 0px;
+  word-spacing: 0px;
+  margin: 0px;
+  border-spacing: 0px;
+}
+
 
 .table-area thead th{
-    font-size: 24px;
-    border: 2px solid red;
+  font-size: 14px;
+  background-color: bisque;
+  /* border: 2px solid red; */
+  border-bottom-style: groove;
 }
 
-.table-area tbody td{
-    border: 2px solid darkgreen;
-    font-size: 20px;
-    text-align: center;
+.table-area tbody td {
+  /* border: 2px solid darkgreen; */
+  font-size: 14px;
+  text-align: center;
+
 }
+
 .side-nav button {
   width: 100%;
   background-color: #e5e9f0;
   position: relative;
   border: 2px solid blueviolet;
   padding: 15px 20px;
-  font-size: 1em;
   font-weight: bold;
   text-align: center;
   cursor: pointer;
@@ -112,14 +152,15 @@ body {
   border-radius: 5px;
   overflow-x: auto;
 }
+
 button:hover {
   background-color: rgb(125, 58, 58);
   transition: 500ms;
 }
 
 footer {
-  height: 100px;
-  padding: 50px;
+  height: 70px;
+  padding: 30px;
   background-color: #d8dee9;
   position: static;
   bottom: 0px;
@@ -127,21 +168,35 @@ footer {
   right: 0px;
 }
 
-.footer-items{
-    display: flex;
-    position: relative;
-    justify-content: center;
-    align-items: center;
-    top: 2rem;
+.footer-items {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+
 }
 
-.footer-items li{
-    font-size: 24px;
-    margin-right: 40px;
-    list-style: none;
-    flex-wrap: wrap;
+.footer-items li {
+
+  margin-right: 40px;
+  list-style: none;
+  border: 2px solid blueviolet;
+  border-radius:5px;
 }
 
-.footer-items li:last-child{
-    margin-right: reverse;
+.footer-items li:last-child {
+  margin-right: 0px;
+}
+
+.foot-info {
+  width: 100%;
+  margin-top: 0px;
+  text-align: center;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #FF0000;
+
 }
